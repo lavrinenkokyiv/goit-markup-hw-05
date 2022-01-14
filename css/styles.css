@@ -154,6 +154,7 @@ nav {
   border-radius: 0px 0px 4px 4px;
 }
 .nav-sites {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,6 +165,28 @@ nav {
   color: var(--blue-text);
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+.nav-sites.active::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--blue-text);
+  border-radius: 2px;
+}
+.nav-sites.lactive::after {
+  content: "";
+  width: 78px;
+  height: 4px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--blue-text);
+  border-radius: 2px;
 }
 .nav-site {
   display: flex;
@@ -708,4 +731,76 @@ address {
   line-height: 16px;
   text-transform: uppercase;
   color: var(--second-text);
+}
+/* Позиционирование */
+.desktop,
+.mobile,
+.design {
+  position: relative;
+}
+
+.desktop::before {
+  display: inline-block;
+  position: absolute;
+  content: "десктопные приложения";
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: var(--second-text);
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.mobile::before {
+  display: inline-block;
+  position: absolute;
+  content: "мобильные приложения";
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: var(--second-text);
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.design::before {
+  display: inline-block;
+  position: absolute;
+  content: "дизайнерские решения";
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: var(--second-text);
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.bluedesk {
+  position: relative;
+}
+.bluedesk::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.item:hover .bluedesk::before {
+  opacity: 1;
 }
