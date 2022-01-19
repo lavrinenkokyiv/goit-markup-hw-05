@@ -200,6 +200,9 @@ nav {
   color: var(--general-text);
   text-decoration: none;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .markas .item + .item {
@@ -223,6 +226,9 @@ nav {
   line-height: 1.1;
   text-decoration: none;
   letter-spacing: 0.02em;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-adm.lope:hover .envelope,
 .nav-adm.lope:hover,
@@ -230,7 +236,6 @@ nav {
 .nav-adm.lope:focus {
   color: var(--blue-text);
   fill: var(--blue-text);
-  cursor: pointer;
 }
 .nav-adm.smar:hover .smartphone,
 .nav-adm.smar:hover,
@@ -238,7 +243,6 @@ nav {
 .nav-adm.smar:focus {
   color: var(--blue-text);
   fill: var(--blue-text);
-  cursor: pointer;
 }
 .nav-adm-two {
   display: block;
@@ -246,6 +250,9 @@ nav {
   line-height: 1.7;
   text-decoration: none;
   font-style: normal;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-adm-two:hover,
 .nav-adm-two:focus {
@@ -293,6 +300,9 @@ nav {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .butt {
   font-weight: bold;
@@ -379,6 +389,9 @@ nav {
   font-size: 16px;
   line-height: 1.6;
   border: none;
+  transition-property: background, box-shadow, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-all:hover,
 .button-site:hover,
@@ -451,6 +464,9 @@ nav {
 }
 .shadow {
   display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .shadow:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -516,6 +532,9 @@ nav {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:hover .icon-instagram,
@@ -524,28 +543,43 @@ nav {
 .social-link:hover .icon-linkedin {
   background-color: var(--blue-text);
   fill: var(--second-text);
-  color: var(--second-text);
   cursor: pointer;
 }
 .icon-instagram {
   width: 20px;
   height: 20px;
   fill: var(--icon-site-fill);
+  background-color: var(--second-text);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-twitter {
   width: 20px;
   height: 20px;
   fill: var(--icon-site-fill);
+  background-color: var(--second-text);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-facebook {
   width: 20px;
   height: 20px;
   fill: var(--icon-site-fill);
+  background-color: var(--second-text);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-linkedin {
   width: 20px;
   height: 20px;
   fill: var(--icon-site-fill);
+  background-color: var(--second-text);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* 6 компаний */
@@ -573,31 +607,49 @@ nav {
   width: 41px;
   height: 46.7px;
   fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .two {
   width: 40px;
   height: 52px;
   fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .three {
   width: 43.46px;
   height: 41.18px;
   fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .four {
   width: 84.44px;
   height: 40.62px;
   fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .five {
   width: 62.54px;
   height: 45.43px;
   fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .six {
   width: 93.79px;
   height: 43.93px;
   fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .marka .company + .company {
   margin-left: 30px;
@@ -613,10 +665,8 @@ nav {
 .groupfive:hover,
 .groupfive:hover .five,
 .groupsix:hover,
-.groupsix:hover .six,
-.color:hover {
+.groupsix:hover .six {
   fill: var(--blue-text);
-  color: var(--blue-text);
 }
 
 .groupone:hover,
@@ -627,6 +677,7 @@ nav {
 .groupsix:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
+  cursor: pointer;
 }
 /* присоединяйтесь футер */
 
@@ -693,14 +744,12 @@ address {
   justify-content: center;
   border-radius: 50%;
   background: var(--icon-background-footer);
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link-footer:hover,
-.icon-instagram-footer:hover,
-.icon-twitter-footer:hover,
-.icon-facebook-footer:hover,
-.icon-linkedin-footer:hover {
-  background-color: var(--blue-text);
-  fill: var(--second-text);
+.social-link-footer:hover {
+  background: var(--blue-text);
   cursor: pointer;
 }
 .icon-instagram-footer {
@@ -739,10 +788,8 @@ address {
   position: relative;
 }
 
-.desktop::before {
-  display: inline-block;
+.deskapp {
   position: absolute;
-  content: "десктопные приложения";
   font-weight: bold;
   line-height: 1.1;
   text-align: center;
@@ -755,10 +802,8 @@ address {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.mobile::before {
-  display: inline-block;
+.mobbapp {
   position: absolute;
-  content: "мобильные приложения";
   font-weight: bold;
   line-height: 1.1;
   text-align: center;
@@ -771,10 +816,8 @@ address {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.design::before {
-  display: inline-block;
+.desmove {
   position: absolute;
-  content: "дизайнерские решения";
   font-weight: bold;
   line-height: 1.1;
   text-align: center;
@@ -790,6 +833,7 @@ address {
 
 .bluedesk {
   position: relative;
+  overflow: hidden;
 }
 .bluedesk::before {
   display: inline-block;
@@ -798,9 +842,69 @@ address {
   background: rgba(33, 150, 243, 0.9);
   width: 100%;
   height: 100%;
-  opacity: 0;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 }
 
 .item:hover .bluedesk::before {
+  transform: translateY(0);
+}
+
+/* Модальное окно */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+.backdrop:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
+}
+.modal:hover {
   opacity: 1;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
