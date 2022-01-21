@@ -172,7 +172,7 @@ nav {
   height: 4px;
   display: flex;
   position: absolute;
-  bottom: 0;
+  bottom: -1.5px;
   left: 0;
   background: var(--blue-text);
   border-radius: 2px;
@@ -835,6 +835,21 @@ address {
   position: relative;
   overflow: hidden;
 }
+.site-photo .pushp {
+  position: absolute;
+  padding: 63px 24px 63px 24px;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: var(--second-text);
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.shadow:hover .pushp {
+  transform: translateY(0);
+}
+
 .bluedesk::before {
   display: inline-block;
   position: absolute;
